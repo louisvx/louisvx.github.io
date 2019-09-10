@@ -49,7 +49,7 @@
 		  <h1 class="header-author"><a href="/">louisxv</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">人总是需要乐趣的，如果没有那就创造一个新世界</p>
+		<p class="header-subtitle">enjoy life and funny, do something cool</p>
 		
 
 		<nav class="header-menu">
@@ -107,7 +107,7 @@
 			  <h1 class="header-author js-header-author">louisxv</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>人总是需要乐趣的，如果没有那就创造一个新世界<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>enjoy life and funny, do something cool<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -151,6 +151,71 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-深度学习入门笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/10/深度学习入门笔记/">深度学习入门笔记”</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/10/深度学习入门笔记/" class="archive-article-date">
+  	<time datetime="2019-09-10T06:20:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#本文为《深度学习入门：基于Python的里理论与实现》的个人笔记<br>由于在大学的毕业论文时接触过深度学习，当时的题目是《基于tensorflow的验证码识别》，因此对深度学习，特别是CNN有一定的基础，所以本文并不会完全记录”入门“的知识，更多的是针对，一些当时没有理解的基础概念，进行进一步的解释和学习，特别是对一些超参数的意义，当时并没有很深刻的理解，在这里将会有进一步的阐述</p>
+<p>##Python的一些好用的数据结构的介绍<br>    NumPy库，这是利用Python进行神经网络搭建的基础，NumPy库主要是进行矩阵运算，在矩阵运算上进行了很多优化，因此，在包括神经网络在内的科学计算上，NumPy都具有重要的地位。此外，还需介绍一个库——MatPlotLib，这是一个绘图库，实现包括但不仅限于Matlab中类似plot的库函数。<br>    除了库函数外，从这本书中，我还学习到了<strong>字典</strong>这一数据结构的在构建神经网络上的高效使用方法。<strong>字典</strong>类似于java，C++中的Map结构，它以key-value的形式，保存数据。在后面的使用中，将以<strong>字典</strong>对变量，甚至<strong>神经网络层</strong>进行保存，形式类似与<strong>变量名（w1）-变量值（10)</strong>以及<strong>层名（Affine1）-层类（Afine（……）)</strong>的形式进行保存。个人认为，这样的好处在于：<br>    <strong>在神经网络中，权重变量、神经网络层是需要不断更新（遍历）的，使用字典这样的数据结构，相较于传统的循环遍历，具有更高的效率。另一方面，相较于list等数据结构，字典是通过‘key’来读取的，即通过变量名来调用，这在神经网络这种含有多种参数的模型中，在编写程序时能够更容易让人理解。特别的，针对神经网络层，将使用有序字典，在后面，将会体现出在编写方面的优势</strong></p>
+<p>##感知机<br>    &gt;感知机接收多个输入信号，输出一个信号。这里所说的“信号”可以想象成电流或河流那样具备“流动性”的东西。&lt;<br>    这里想要强调的是，信号的“流动性”，信号是会在节点直接运动、变化，不是一层不变的。后面将感知机接收的信号类比于电流是一个很形象的比喻（虽然电流往往充当一些信号）<br>    &gt;权重相当于电流里所说的电阻。电阻是决定电流流动难度的参数， 电阻越低，通过的电流就越大。而感知机的权重则是值越大，通过 的信号就越大。不管是电阻还是权重，在控制信号流动难度（或者流 动容易度）这一点上的作用都是一样的。&lt;<br>    &gt;偏置和权重w1、w2的作用是不 一样的。具体地说，w1和w2是控制输入信号的重要性的参数，而偏置是调 整神经元被激活的容易程度（输出信号为1的程度）的参数。&lt;<br>    感知机的一个重要应用，就是与非门电路。<br>    感知机的局限性在于它只能表示由一条直线分割的空间。即单直线表示的分割空间。但是，为了弥补上述的缺陷，提出了多层感知机，将上一层的感知机的输出作为下一层感知机的输入，经过多次的线性叠加，得到更多维的空间。类似的应用有异或门。感知机最主要的贡献就是&gt;通过叠加层能够进行非线性的表示&lt;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/10/深度学习入门笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
